@@ -280,6 +280,7 @@ if (mysqli_query($conn, $sqlUpdateKH09)) {
 } else {
     echo "Lỗi trong quá trình cập nhật tên 'Nguyễn Văn Hoan' cho dữ liệu Khách Hàng có mã là KH09 và năm đăng ký là 2007: " . mysqli_error($conn) . "<br>";
 }
+
 ?>
 
                          
