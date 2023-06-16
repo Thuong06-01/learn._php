@@ -72,26 +72,6 @@ $conn = mysqli_connect($servername,$username,$password, $dbname);
       echo "Delete success";
     }
 
-// tạo bảng KHACHHANG
-$sql_khachhang = "CREATE TABLE IF NOT EXISTS KHACHHANG (
-  MAKH char(4) PRIMARY KEY,
-  HOTEN VARCHAR(255),
-  DCHI VARCHAR(255),
-  SODT VARCHAR(20),
-  NGSINH DATE,
-  DOANHSO DECIMAL(10, 2),
-  NGDK DATE
-)";
-$result = mysqli_query($conn, $sql_khachhang);
-// thực thi câu lệnh sql
-
-if(!$result)
-Die("database access failed:" . mysqli_error());
-// thông báo lỗi nếu thực thi thất bại
-else{ 
-    echo "database success";
-}
-
 //bài 2
 // Tạo bảng KHACHHANG
 $sqlCreateKHACHHANG = "CREATE TABLE KHACHHANG (
